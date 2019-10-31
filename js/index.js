@@ -80,3 +80,6 @@ allPs[6].textContent = siteContent["contact"]['phone'];
 allPs[7].textContent = siteContent["contact"]['email'];
 allPs[8].textContent = siteContent["footer"]['copyright'];
 
+navItems.forEach((item) => {
+  item.style.color = 'green';
+});
