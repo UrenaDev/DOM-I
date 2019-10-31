@@ -83,3 +83,15 @@ allPs[8].textContent = siteContent["footer"]['copyright'];
 navItems.forEach((item) => {
   item.style.color = 'green';
 });
+
+const navBar = document.querySelector('nav');
+const newLink1 = document.createElement('a');
+const newLink2 = document.createElement('a');
+
+navBar.appendChild(newLink1);
+newLink1.textContent = 'NewAppendLink';
+newLink1.style.color = 'green';
+
+navBar.prepend(newLink2);
+newLink2.textContent = 'NewPrependLink';
+newLink2.style.color = 'green';
